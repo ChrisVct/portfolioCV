@@ -13,6 +13,7 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDescriptionComponent } from './project-description/project-description.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { CguModalComponent } from './cgu-modal/cgu-modal.component';
+import { PresentationPersoComponent } from './presentation-perso/presentation-perso.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CguModalComponent } from './cgu-modal/cgu-modal.component';
     ProjectDescriptionComponent,
     ContactModalComponent,
     CguModalComponent,
+    PresentationPersoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
