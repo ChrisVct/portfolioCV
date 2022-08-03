@@ -1,0 +1,83 @@
+<header>
+  <nav
+    class="navbar is-warning is-fixed-top container is-fluid"
+    role="navigation"
+    aria-label="main navigation"
+  >
+    <div class="navbar-brand">
+      <a
+        class="navbar-item is-size-4 is-family-monospace has-text-weight-semibold has-text-grey-dark"
+        routerLink=""
+      >
+        Christophe VICHIT
+      </a>
+
+      <a
+        role="button"
+        class="navbar-burger"
+        [ngClass]="{ 'is-active': isToggled === true }"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="navbarBasicExample"
+        (click)="toggle()"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div
+      id="navbarBasicExample"
+      class="navbar-menu"
+      [ngClass]="{ 'is-active': isToggled === true }"
+    >
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" routerLink="presentation" (click)="toggle()">
+            Présentation
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item"> Quelques mots </a>
+            <a class="navbar-item"> Compétences </a>
+            <a class="navbar-item"> Mon Parcours </a>
+            <hr class="navbar-divider" />
+            <a class="navbar-item"> Télécharger mon CV </a>
+          </div>
+        </div>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link has-text-grey-dark"> Réalisations </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" routerLink="realisations"> Réalisations </a>
+            <a class="navbar-item" routerLink="projet"> Réalisations2 </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <a class="navbar-item" href="">
+          <span class="icon has-text-grey">
+            <i class="fa-brands fa-2x fa-github"></i>
+          </span>
+        </a>
+        <a class="navbar-item" href="">
+          <span class="icon has-text-grey">
+            <i class="fa-brands fa-2x fa-linkedin"></i>
+          </span>
+        </a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <button
+              class="button is-dark has-background-grey"
+              data-target="modal-js-example"
+            >
+              <strong>Prenons contact !</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

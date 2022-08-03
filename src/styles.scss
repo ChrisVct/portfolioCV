@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+
+// Import a Google Font
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+
+// // Set your brand colors
+// $purple: #8a4d76;
+// $pink: #fa7c91;
+// $brown: #757763;
+// $beige-light: #d0d1cd;
+// $beige-lighter: #eff0eb;
+
+// // Update Bulma's global variables
+// $family-sans-serif: "Nunito", sans-serif;
+// $grey-dark: $brown;
+// $grey-light: $beige-light;
+// $primary: $purple;
+// $link: $pink;
+// $widescreen-enabled: false;
+// $fullhd-enabled: false;
+
+// // Update some of Bulma's component variables
+// $body-background-color: $beige-lighter;
+// $control-border-width: 2px;
+// $input-border-color: transparent;
+// $input-shadow: none;
+
+$footer-padding: 10px;
+
+@import "bulma";
+@import "~bulma-timeline";
+
+body {
+  height: 100vh;
+}
+html {
+  // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+  //                 url("../../media/examples/lizard.png");
+  background-image: url("assets/computer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 94vh;
+}
+.overlay {
+  background: rgba(50, 70, 80, 0.7);
+  overflow: auto;
+  height: 100%;
+}
