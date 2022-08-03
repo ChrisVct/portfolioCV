@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isToggled!: boolean;
+  showModal: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {
@@ -18,5 +20,8 @@ export class HeaderComponent implements OnInit {
     } else {
       this.isToggled = false;
     }
+  }
+  selectItem() {
+    this.showModal = true;
   }
 }

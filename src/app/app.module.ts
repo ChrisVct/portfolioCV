@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDescriptionComponent } from './project-description/project-description.component';
+import { ContactModalComponent } from './contact-modal/contact-modal.component';
+import { CguModalComponent } from './cgu-modal/cgu-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ProjectDescriptionComponent } from './project-description/project-descr
     SkillsComponent,
     ProjectListComponent,
     ProjectDescriptionComponent,
+    ContactModalComponent,
+    CguModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

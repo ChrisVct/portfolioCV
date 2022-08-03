@@ -11,7 +11,6 @@
       >
         Christophe VICHIT
       </a>
-
       <a
         role="button"
         class="navbar-burger"
@@ -26,7 +25,6 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-
     <div
       id="navbarBasicExample"
       class="navbar-menu"
@@ -34,26 +32,13 @@
     >
       <div class="navbar-start">
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link" routerLink="presentation" (click)="toggle()">
-            Présentation
-          </a>
+          <a class="navbar-link"> Présentation </a>
           <div class="navbar-dropdown">
-            <a class="navbar-item"> Quelques mots </a>
-            <a class="navbar-item"> Compétences </a>
-            <a class="navbar-item"> Mon Parcours </a>
-            <hr class="navbar-divider" />
+            <a class="navbar-item" routerLink="presentation">Présentation </a>
             <a class="navbar-item"> Télécharger mon CV </a>
           </div>
         </div>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link has-text-grey-dark"> Réalisations </a>
-
-          <div class="navbar-dropdown">
-            <a class="navbar-item" routerLink="realisations"> Réalisations </a>
-            <a class="navbar-item" routerLink="projet"> Réalisations2 </a>
-          </div>
-        </div>
+        <a class="navbar-item" routerLink="realisations"> Réalisations </a>
       </div>
 
       <div class="navbar-end">
@@ -72,6 +57,7 @@
             <button
               class="button is-dark has-background-grey"
               data-target="modal-js-example"
+              (click)="selectItem()"
             >
               <strong>Prenons contact !</strong>
             </button>
@@ -81,3 +67,8 @@
     </div>
   </nav>
 </header>
+
+<app-contact-modal
+  *ngIf="showModal"
+  (onClose)="showModal = false"
+></app-contact-modal>
