@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectListComponent } from './project-list/project-list.component';
-import { ProjetBarbemousseComponent } from './projet-barbemousse/projet-barbemousse.component';
+import { ProjetBarbemousseComponent } from './project-list/projet-barbemousse/projet-barbemousse.component';
+import { ProjetPortfolioComponent } from './project-list/projet-portfolio/projet-portfolio.component';
 
 const routes: Routes = [
   {
@@ -18,10 +19,13 @@ const routes: Routes = [
     path: 'realisations',
     component: ProjectListComponent,
   },
-
   {
     path: 'projetBarbemousse',
     component: ProjetBarbemousseComponent,
+  },
+  {
+    path: 'projetPortfolio',
+    component: ProjetPortfolioComponent,
   },
 ];
 
