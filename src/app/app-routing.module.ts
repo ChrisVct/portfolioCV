@@ -5,6 +5,7 @@ import { PresentationComponent } from './presentation/presentation.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjetBarbemousseComponent } from './project-list/projet-barbemousse/projet-barbemousse.component';
 import { ProjetPortfolioComponent } from './project-list/projet-portfolio/projet-portfolio.component';
+import { ProjetEniEncheresComponent } from './project-list/projet-eni-encheres/projet-eni-encheres.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'projetPortfolio',
     component: ProjetPortfolioComponent,
+  },
+  {
+    path: 'projetEniEncheres',
+    component: ProjetEniEncheresComponent,
   },
 ];
 

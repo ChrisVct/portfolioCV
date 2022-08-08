@@ -15,7 +15,7 @@ import { CguModalComponent } from './cgu-modal/cgu-modal.component';
 import { PresentationPersoComponent } from './presentation/presentation-perso/presentation-perso.component';
 import { ProjetBarbemousseComponent } from './project-list/projet-barbemousse/projet-barbemousse.component';
 import { ProjetPortfolioComponent } from './project-list/projet-portfolio/projet-portfolio.component';
-import { ProjetEniEncheresComponent } from './projet-eni-encheres/projet-eni-encheres.component';
+import { ProjetEniEncheresComponent } from './project-list/projet-eni-encheres/projet-eni-encheres.component';
 
 @NgModule({
   declarations: [

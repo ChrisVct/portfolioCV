@@ -11,7 +11,7 @@ try{
     mail($to,$subject,$message, $headers);
 	echo '<script type="text/javascript">
 	alert("Votre message a été envoyé. Merci\n");
-	setTimeout(document.location.href="https://www.vichitchristophe.online/#contact");
+	setTimeout(document.location.href="https://www.vichit.fr");
 	</script>'; 
 }catch(Exception $e){
 	echo'Désolé, une erreur est survenue. Votre message n\'a pas été envoyé.';
