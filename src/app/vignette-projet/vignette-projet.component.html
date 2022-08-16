@@ -1,22 +1,20 @@
 <div class="service-block">
   <div class="inner-box">
     <div class="image-box">
-      <a [routerLink]="vignetteProjet.routerLinkPath"
+      <a (click)="onVoirProjet()"
         ><figure class="image">
           <img
-            [src]="vignetteProjet.imageUrl"
-            alt="{{ vignetteProjet.titre }}"
+            [src]="descriptionProjet.imageUrlVignette"
+            alt="{{ descriptionProjet.titre }}"
           /></figure
       ></a>
     </div>
     <div class="lower-content">
       <h4>
-        <a [routerLink]="vignetteProjet.routerLinkPath"
-          >{{ vignetteProjet.titre }} et {{ vignetteProjet.id }}</a
-        >
+        <a (click)="onVoirProjet()">{{ descriptionProjet.titre }}</a>
       </h4>
       <div class="text">
-        {{ vignetteProjet.sousTitre }}
+        {{ descriptionProjet.sousTitreVignette }}
       </div>
       <div class="btn-box">
         <a (click)="onVoirProjet()" class="read-more"

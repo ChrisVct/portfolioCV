@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { VignetteProjet } from '../models/vignette-projet.models';
-import { VignettesProjetService } from '../service/vignettes-projet-service';
+import { DescriptionProjet } from '../models/description-projet.models';
+import { DescriptionProjetService } from '../service/description-projet-service';
 
 @Component({
   selector: 'app-project-list',
@@ -8,11 +8,12 @@ import { VignettesProjetService } from '../service/vignettes-projet-service';
   styleUrls: ['./project-list.component.scss'],
 })
 export class ProjectListComponent implements OnInit {
-  vignettesProjet!: VignetteProjet[];
+  vignettesProjet!: DescriptionProjet[];
 
-  constructor(private vignettesProjetService: VignettesProjetService) {}
+  constructor(private descriptionProjetService: DescriptionProjetService) {}
 
   ngOnInit(): void {
-    this.vignettesProjet = this.vignettesProjetService.getAllVignettesProjet();
+    this.vignettesProjet =
+      this.descriptionProjetService.getAllDescriptionsProjet();
   }
 }

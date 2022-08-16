@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { VignetteProjet } from '../models/vignette-projet.models';
-import { VignettesProjetService } from '../service/vignettes-projet-service';
+import { DescriptionProjet } from '../models/description-projet.models';
+import { DescriptionProjetService } from '../service/description-projet-service';
 
 @Component({
   selector: 'app-presentation-projet',
@@ -9,16 +9,16 @@ import { VignettesProjetService } from '../service/vignettes-projet-service';
   styleUrls: ['./presentation-projet.component.scss'],
 })
 export class PresentationProjetComponent implements OnInit {
-  vignetteProjet!: VignetteProjet;
+  descriptionProjet!: DescriptionProjet;
 
   constructor(
-    private vignettesProjetService: VignettesProjetService,
+    private descriptionProjetService: DescriptionProjetService,
     private route: ActivatedRoute
   ) {}
   ngOnInit(): void {
     const projetId = +this.route.snapshot.params['id'];
-    this.vignetteProjet =
-      this.vignettesProjetService.getVignetteProjetById(projetId);
+    this.descriptionProjet =
+      this.descriptionProjetService.getDescriptionProjetById(projetId);
   }
 
   titre!: string;

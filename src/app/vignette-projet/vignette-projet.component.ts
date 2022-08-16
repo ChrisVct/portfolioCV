@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { VignetteProjet } from '../models/vignette-projet.models';
+import { DescriptionProjet } from '../models/description-projet.models';
 
 @Component({
   selector: 'app-vignette-projet',
@@ -9,17 +9,9 @@ import { VignetteProjet } from '../models/vignette-projet.models';
 })
 export class VignetteProjetComponent {
   constructor(private router: Router) {}
-  @Input() vignetteProjet!: VignetteProjet;
-
-  // id!: number;
-  // routerLinkPath!: string;
-  // imageUlr!: string;
-  // titre!: string;
-  // sousTitre!: string;
-  // sousTitre2!: string;
-  // contenuPrincipal!: string;
+  @Input() descriptionProjet!: DescriptionProjet;
 
   onVoirProjet() {
-    this.router.navigateByUrl(`realisations/${this.vignetteProjet.id}`);
+    this.router.navigateByUrl(`realisations/${this.descriptionProjet.id}`);
   }
 }

@@ -7,35 +7,47 @@
       <div class="columns is-vcentered">
         <div class="column">
           <h2 class="title is-spaced">
-            {{ vignetteProjet.titre }} importé du service !
+            {{ descriptionProjet.titre }}
           </h2>
-          <p class="subtitle" [innerHTML]="vignetteProjet.sousTitre2"></p>
+          <p
+            class="subtitle"
+            [innerHTML]="descriptionProjet.sousTitrePresentation"
+          ></p>
           <p
             class="has-text-justified"
-            [innerHTML]="vignetteProjet.contenuPrincipal"
+            [innerHTML]="descriptionProjet.contenuPrincipal"
           ></p>
           <br />
           <br />
           <p class="has-text-right">
-            <i
-              >Site en construction. Projet démarré en Mars 2022. Déploiement
-              prévu Q3-2022.</i
-            >
+            <i>{{ descriptionProjet.annotationFinArticle }}</i>
           </p>
         </div>
         <div class="column">
           <div class="columns is-multiline">
             <div class="column is-6 is-flex">
-              <img src="../../assets/Barbemousse1-min.png" alt="" />
+              <img
+                [src]="descriptionProjet.imageUrlPresentation1"
+                alt="{{ descriptionProjet.titre }}"
+              />
             </div>
             <div class="column is-6 is-flex is-justify-content-center">
-              <img src="../../assets/scrollFullPagegif.gif" alt="" />
+              <img
+                [src]="descriptionProjet.imageUrlPresentation2"
+                alt="{{ descriptionProjet.titre }}"
+              />
             </div>
             <div class="column is-6 is-flex is-justify-content-center">
-              <img src="../../assets/animationBieres.gif" alt="" />
+              <img
+                [src]="descriptionProjet.imageUrlPresentation3"
+                alt="{{ descriptionProjet.titre }}"
+              />
             </div>
             <div class="column is-6 is-flex">
-              <img src="../../assets/Barbemousse2-min.png" alt="" />
+              <img
+                [src]="descriptionProjet.imageUrlPresentation4"
+                alt="{{ descriptionProjet.titre }}"
+              />
             </div>
           </div>
         </div>
