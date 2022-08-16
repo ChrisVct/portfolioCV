@@ -1,0 +1,28 @@
+<div class="service-block">
+  <div class="inner-box">
+    <div class="image-box">
+      <a [routerLink]="vignetteProjet.routerLinkPath"
+        ><figure class="image">
+          <img
+            [src]="vignetteProjet.imageUrl"
+            alt="{{ vignetteProjet.titre }}"
+          /></figure
+      ></a>
+    </div>
+    <div class="lower-content">
+      <h4>
+        <a [routerLink]="vignetteProjet.routerLinkPath">{{
+          vignetteProjet.titre
+        }}</a>
+      </h4>
+      <div class="text">
+        {{ vignetteProjet.sousTitre }}
+      </div>
+      <div class="btn-box">
+        <a [routerLink]="vignetteProjet.routerLinkPath" class="read-more"
+          >En savoir plus<span class="fa fa-arrow-right"></span
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

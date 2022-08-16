@@ -12,74 +12,10 @@
   </div>
 </div>
 
-<section class="columns services-section px-5">
-  <div class="column is-4 service-block">
-    <div class="inner-box">
-      <div class="image-box">
-        <a routerLink="/projetBarbemousse"
-          ><figure class="image">
-            <img src="../../assets/Barbemousse-min.png" alt="" /></figure
-        ></a>
-      </div>
-      <div class="lower-content">
-        <h4>
-          <a routerLink="/presentationProjet">MicroBrasserie Barbemousse</a>
-        </h4>
-        <div class="text">
-          Site vitrine d'un brasseur indépendant, réalisé avec React et
-          Bootstrap.
-        </div>
-        <div class="btn-box">
-          <a routerLink="/presentationProjet" class="read-more"
-            >En savoir plus<span class="fa fa-arrow-right"></span
-          ></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-4 service-block">
-    <div class="inner-box">
-      <div class="image-box">
-        <a routerLink="/projetPortfolio">
-          <figure class="image">
-            <img src="../../assets/Portfolio-min.png" alt="" />
-          </figure>
-        </a>
-      </div>
-      <div class="lower-content">
-        <h4><a routerLink="/projetPortfolio">Portfolio</a></h4>
-        <div class="text">
-          Site personnel de présentation, réalisé avec Angular et Bulma.
-        </div>
-        <div class="btn-box">
-          <a routerLink="/projetPortfolio" class="read-more"
-            >En savoir plus <span class="fa fa-arrow-right"></span
-          ></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column is-4 service-block">
-    <div class="inner-box">
-      <div class="image-box">
-        <a routerLink="/projetEniEncheres">
-          <figure class="image">
-            <img src="../../assets/encheresEncheresCoComp.png" alt="" />
-          </figure>
-        </a>
-      </div>
-      <div class="lower-content">
-        <h4><a routerLink="/projetEniEncheres">Application d'enchères</a></h4>
-        <div class="text">
-          Application WEB, réalisée dans le cadre de ma formation D2WM, avec
-          JavaEE et Bootstrap.
-        </div>
-        <div class="btn-box">
-          <a routerLink="/projetEniEncheres" class="read-more"
-            >En savoir plus <span class="fa fa-arrow-right"></span
-          ></a>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="columns services-section px-5 is-flex-wrap-wrap">
+  <app-vignette-projet
+    *ngFor="let vignetteProjet of vignettesProjet"
+    [vignetteProjet]="vignetteProjet"
+    class="column is-4"
+  ></app-vignette-projet>
 </section>
