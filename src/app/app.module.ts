@@ -13,9 +13,6 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ContactModalComponent } from './contact-modal/contact-modal.component';
 import { CguModalComponent } from './cgu-modal/cgu-modal.component';
 import { PresentationPersoComponent } from './presentation/presentation-perso/presentation-perso.component';
-import { ProjetBarbemousseComponent } from './project-list/projet-barbemousse/projet-barbemousse.component';
-import { ProjetPortfolioComponent } from './project-list/projet-portfolio/projet-portfolio.component';
-import { ProjetEniEncheresComponent } from './project-list/projet-eni-encheres/projet-eni-encheres.component';
 import { VignetteProjetComponent } from './vignette-projet/vignette-projet.component';
 import { PresentationProjetComponent } from './presentation-projet/presentation-projet.component';
 
@@ -32,9 +29,6 @@ import { PresentationProjetComponent } from './presentation-projet/presentation-
     ContactModalComponent,
     CguModalComponent,
     PresentationPersoComponent,
-    ProjetBarbemousseComponent,
-    ProjetPortfolioComponent,
-    ProjetEniEncheresComponent,
     VignetteProjetComponent,
     PresentationProjetComponent,
   ],

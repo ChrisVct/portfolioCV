@@ -62,7 +62,13 @@ export class DescriptionProjetService {
       sousTitrePresentation:
         "Site d'enchères-troc (avec système de points).<br />",
       contenuPrincipal:
-        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premier projet d'école dont l'objectif était de mettre en application les notions de POO, de persistance des données et développement en couches. L'accent a été mis sur les fonctionnalités plus que sur le rendu esthétique de l'application.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En tant que \"Scrum Master\", j'avais pour missions : concevoir l'architecture logicielle ; accompagner mes collègues (en difficulté à ce stade de la formation). Je poursuis désormais seul le développement, dans le but d'entretenir/approfondir mes compétences en JavaEE.</p><br /><p class=\"has-text-justified\">Mots clés : JavaEE9, TomcatV9, SQL Server, modèle MVC, git/github, eclipse, pair programming, code review",
+        "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premier projet d'école dont l'objectif était de mettre en " +
+        'application les notions de POO, de persistance des données et développement en couches. ' +
+        "L'accent a été mis sur les fonctionnalités plus que sur le rendu esthétique de l'application." +
+        '<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En tant que "Scrum Master", j\'avais pour missions : ' +
+        "concevoir l'architecture logicielle ; accompagner mes collègues (en difficulté à ce stade de la formation).</p>" +
+        '<br /><p class="has-text-justified">Mots clés : JavaEE9, TomcatV9, SQL Server, modèle MVC, git/github, ' +
+        'eclipse, pair programming, code review',
       annotationFinArticle: 'Réalisé en Juillet 2022.',
       imageUrlPresentation1: '../../../assets/enchereDiagClasse.png',
       imageUrlPresentation2: '../../../assets/enchereDiagEtatUC.png',
