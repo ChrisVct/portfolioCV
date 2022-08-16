@@ -17,6 +17,7 @@ import { ProjetBarbemousseComponent } from './project-list/projet-barbemousse/pr
 import { ProjetPortfolioComponent } from './project-list/projet-portfolio/projet-portfolio.component';
 import { ProjetEniEncheresComponent } from './project-list/projet-eni-encheres/projet-eni-encheres.component';
 import { VignetteProjetComponent } from './vignette-projet/vignette-projet.component';
+import { PresentationProjetComponent } from './presentation-projet/presentation-projet.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { VignetteProjetComponent } from './vignette-projet/vignette-projet.compo
     ProjetPortfolioComponent,
     ProjetEniEncheresComponent,
     VignetteProjetComponent,
+    PresentationProjetComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
