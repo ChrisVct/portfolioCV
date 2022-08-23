@@ -84,8 +84,6 @@ export class DescriptionProjetService {
     const descriptionProjet = this.descriptionsProjet.find(
       (descriptionProjet) => descriptionProjet.id === descriptionProjetId
     );
-    console.log('vignette id = ' + descriptionProjet?.id);
-
     if (!descriptionProjet) {
       throw new Error('projet non trouvé');
     } else {

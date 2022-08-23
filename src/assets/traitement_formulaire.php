@@ -4,8 +4,8 @@ try{
 	ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
     $from = $_POST['email'];
-    $to = "contact@vichitchristophe.online";
-    $subject = $_POST['nom']." ".$_POST['prenom'];
+    $to = "contact@vichit.fr";
+    $subject = $_POST['nom'] . " " . $_POST['prenom'];
     $message = $_POST['message'];
     $headers = $from;
     mail($to,$subject,$message, $headers);
