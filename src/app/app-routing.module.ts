@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'realisations/:id',
     component: PresentationProjetComponent,
   },
+  {
+    path: '**',
+    component: LandingPageComponent,
+  },
 ];
 
 @NgModule({
